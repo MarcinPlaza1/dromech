@@ -1,0 +1,259 @@
+.container .content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	padding: 0 100px;
+}
+
+.container .content .bannerText {
+	position: relative;
+	max-width: 600px;
+	padding-right: 50px;
+	margin-bottom: 160px;
+}
+
+.container .content .bannerText div {
+	display: none;
+}
+
+.container .content .bannerText div.active {
+	display: initial;
+	transform: translateX(20px);
+}
+
+.container .content .bannerText h2 {
+	font-size: 44px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	color: #000;
+}
+
+.container .content .bannerText span {
+	font-weight: 700;
+}
+
+.container .content .bannerText p {
+	font-size: 18px;
+	color: #000;
+	line-height: 1.8em;
+	margin: 40px 0;
+}
+
+.container .content .bannerText a {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+	letter-spacing: 1px;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 15px;
+	z-index: 1;
+}
+
+.container .content .bannerText a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100%;
+	background: #f0140d;
+	z-index: -1;
+	transition: 0.5s ease-in-out;
+}
+
+.container .content .bannerText a:hover:before {
+	width: 100%;
+}
+
+.container .content .bannerImg {
+	position: relative;
+	width: 850px;
+	height: 530px;
+	background: #000;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container .content .bannerImg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .content .bannerImg img.active {
+	opacity: 1;
+}
+
+.container .icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 100px;
+}
+
+.container .icons ul.sci,
+.container .icons ul.controls {
+	position: relative;
+	display: flex;
+}
+
+.container .icons ul.sci li {
+	margin-right: 30px;
+}
+
+.container .icons ul.controls li {
+	list-style: none;
+	padding: 10px 0 0 50px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.container .icons ul.controls li:hover {
+	opacity: 0.5;
+}
+
+.about {
+	position: relative;
+	width: 100%;
+	display: flex;
+	margin-top: 100px;
+	padding-bottom: 100px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.about .contentBx {
+	width: 50%;
+	padding: 100px;
+	text-align: justify;
+}
+
+h2.heading {
+	position: relative;
+	color: #000;
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 70px;
+}
+
+h2.heading::before {
+	content: '';
+	position: absolute;
+	display: flex;
+	top: 60px;
+	left: 0px;
+	width: 70px;
+	height: 3px;
+	background: #f0140d;
+	transition: 0.5s ease-in-out;
+}
+
+p.text {
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 1.9em;
+}
+
+p {
+	color: #000;
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-top: 25px;
+	line-height: 1.3em;
+}
+
+.historia {
+	text-align: right;
+	margin-top: 50px;
+}
+
+.about .historia a {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+	letter-spacing: 1px;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 15px;
+	letter-spacing: 1px;
+	z-index: 1;
+}
+
+.about .historia a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100%;
+	background: #f0140d;
+	transition: 0.5s ease-in-out;
+	z-index: -1
+}
+
+.about .historia a:hover:before {
+	width: 100%;
+}
+
+.about .imgBx {
+	background: url(../../assets/img/dromech.PNG);
+	background-size: cover;
+	background-position: center;
+	width: 55%;
+	;
+	margin-top: 60px;
+}
+
+.services {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.services h1 {
+	display: inline-block;
+	text-transform: uppercase;
+	border-bottom: 4px solid #f0140d;
+	font-size: 26px;
+	padding-bottom: 30px;
+}
+
+.service {
+	display: inline-block;
+	padding: 35px;
+	transition: 0.4s;
+	margin-top: 20px;
+}
+
+.service i {
+	color: rgb(0, 0, 0);
+	font-size: 34px;
+	margin-bottom: 30px;
+}
+
+.service h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}

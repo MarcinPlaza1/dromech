@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>DROMECH S.C. - oznakowanie poziome, oznakowanie pionowe, znaki drogowe</title>
+  <link rel="stylesheet" href="css/offers/offers.css">
+  <link rel="stylesheet" href="css/offers/kopia.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+
+<body>
+  <div class="topbar"></div>
+  <div class="offers">
+    <header id="navbar">
+      <img src="assets/img/logo.png" class="logo">
+      <ul>
+        <li><a href="#" class="active">Główna</a></li>
+        <li><a href="#">O firmie</a></li>
+        <li><a href="#">Oferta</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+      <span class="menuIcon" onclick="menuToggle()"></span>
+    </header>
+    <div class="test">
+      <ul class="nav">
+        <h2 class="heading">Oferty</h2>
+        <li class="button-dropdown">
+          <a class="dropdown-toggle  active">
+            Oznakowanie pionowe
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="template-link" id="template1">
+                Znaki ostrzegawcze
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Znaki zakazu
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template3">
+                Znaki nakazu
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Znaki informacyjne
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Znaki kierunku i miejscowości
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Znaki uzupełniające
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Dodatkowe znaki pionowe
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="button-dropdown">
+          <a class="dropdown-toggle">
+            Oznakowanie poziome
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="template-link" id="template1">
+                Wykaz znaków poziomych
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Punktowe elementy odblaskowe - kocie oczka
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template3">
+                Znaki niekonwencjonalne na jezdni
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="button-dropdown">
+          <a class="dropdown-toggle">
+            Elementy bezpieczeństwa ruchu
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="template-link" id="template1">
+                Azyle dla pieszych
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Progi zwalniające
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template3">
+                Lustra drogowe
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template3">
+                Blokady parkingowe
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template3">
+                Elementy zabezpieczające roboty drogowe
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template3">
+                Bariery ochronne
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template3">
+                Wygrodzenia łańcuchowe
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="button-dropdown">
+          <a class="dropdown-toggle">
+            Kompleksowe oznakowanie hal i parkingów
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="template-link" id="template2">
+                Oznakowanie hal
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Oznakowanie parkingów
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="button-dropdown">
+          <a class="dropdown-toggle">
+            Oznakowanie dodatkowe
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="template-link" id="template2">
+                Reklamy różnego formatu
+              </a>
+            </li>
+            <li>
+              <a class="template-link" id="template2">
+                Tabliczki z nazwami ulic
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="template-container">
+        <div id="show-template1">
+          <h2>Znaki ostrzegawcze</h2>
+          <img src="assets/signs/pionowe/nakazu.jpg" alt="Sample Image" class="img-fluid">
+        </div>
+        <div class="d-none" id="show-template2">
+          <h2>Znaki zakazu</h2>
+          <img src="assets/signs/pionowe/zakazu.jpg" alt="Sample Image" class="img-fluid">
+        </div>
+        <div class="d-none" id="show-template3">
+          <h2>Znaki nakazu</h2>
+          <img src="assets/signs/pionowe/ostrzegawcze.jpg" alt="Sample Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="informacje">
+      <div class="kontener">
+        <div class="form">
+          <h2 class="zapytaj">Zapytaj o cenę</h2>
+          <form class="form" id="contactForm" method="post" novalidate action="/sendscript.php">
+            <div class="form-row">
+              <label for="field-name">Imię i nazwisko</label>
+              <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
+                pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+            </div>
+            <div class="form-row">
+              <label for="field-business">Firma/Instytucja</label>
+              <input type="text" name="business">
+            </div>
+            <div class="form-row">
+              <label for="field-city">Miasto</label>
+              <input type="text" name="city">
+            </div>
+            <div class="form-row">
+              <label for="field-email">Adres e-mail</label>
+              <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <div class="form-row">
+              <label for="field-message">Wiadomość</label>
+              <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"
+                pattern=".+"></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="submit-btn">
+                Wyślij
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="contactInfo">
+          <div>
+            <h2>Kontakt</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fas fa-street-view"></i></span>
+                <span>37-400 Nisko<br>ul. Nowa 99</span>
+              </li>
+              <li>
+                <span><i class="fas fa-phone-volume"></i></span>
+                <span>tel/fax (015) 841 51 33<br>kom. 502 651 729</span>
+              </li>
+              <li>
+                <span><i class="fas fa-envelope"></i></span>
+                <span>kontakt@dromech.com.pl</span>
+              </li>
+            </ul>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.4658157308942!2d22.146679388160106!3d50.49950259871133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d2a3f593e195f%3A0x106df104bb738d62!2sDromech%20s.c.!5e0!3m2!1spl!2spl!4v1596574958020!5m2!1spl!2spl"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer">© 2020 Dromech S.C Wszelkie prawa zastrzeżone</div>
+
+    <select class="elo">
+      <option value="assets/signs/pionowe/nakazu.jpg" selected>Facebook</option>
+      <option value="assets/signs/pionowe/zakazu.jpg">Twitter</option>
+      <option value="assets/signs/pionowe/ostrzegawcze.jpg">Instagram</option>
+    </select>
+  
+  <img id="imageToSwap" src="">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+
+    <script src="js/drop.js"></script>
+    <script src="js/dropJS.js"></script>
+
+</body>
+
+</html>

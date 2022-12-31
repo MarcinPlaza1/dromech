@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading{
+    margin-bottom: 30px;
+    z-index: 1;
+    position: relative;
+    left: 60px;
+}
+
+
+.offers header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.offers header ul
+{
+    position: relative;
+    display: flex;
+}
+.offers header ul li
+{
+    list-style: none;
+    margin: 0 20px;
+}
+.offers header ul li a
+{
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: #000;
+    text-decoration: none;
+    z-index: 1;
+}
+.offers header ul li:nth-child(3) a,
+.offers header ul li:nth-child(4) a
+{
+    color: #000;
+}
+.offers header ul li a:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f0140d;
+    z-index: -1;
+    transition: 0.5s ease-in-out
+}
+.offers header ul li a:hover:before,
+.offers header ul li a.active:before
+{
+    width: 40px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.menuIcon
+{
+    display: none;
+}
+
+.topbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    height: 30px;
+}
+
+
+.informacje{
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(36deg, rgb(235, 235, 235) 12%, rgb(245, 245, 245) 71%);
+    padding-bottom: 160px;
+}
+
+.kontener
+{
+	position: relative;
+	width: 100%;
+	height: 900px;
+	background: linear-gradient(36deg, rgb(235, 235, 235) 12%, rgb(245, 245, 245) 71%);
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+    padding-bottom: 160px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.zapytaj{
+    margin: 1rem;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 95px;
+}
+
+	.form {
+        margin:1rem;
+        max-width:40rem;
+        padding-top: 30px;
+	}
+	.form .form-row {
+        margin-bottom:1rem;
+        width: 500px;
+    }
+    .form .form-row:last-child {
+        margin-bottom: 0;
+    }
+    
+	.form input[type=text], 
+	.form input[type=email],
+    .form textarea {
+        font-family:sans-serif;
+        padding:0.8rem;
+        border: none;
+		border-bottom:2px solid #aaa;
+        display: block;
+        width:100%;
+        color:#666;
+	}
+    .form input[type=text]:focus,
+    .form input[type=email]:focus,
+    .form textarea:focus {
+        box-shadow:inset 0 0 0 1px , inset 0 1px 5px rgba(0,0,0,0.07);
+        outline:none;
+    }
+    .form textarea {
+        height:10rem;
+    }
+	.form label {
+		display: block;
+		font-size:16px;
+        margin-bottom:0.5rem;
+        
+	}
+    .form .submit-btn {
+        font-family: sans-serif;
+        padding:1rem 2rem;
+        background: none;
+        border: 1px solid #333;
+        color: #000;
+        font-size:1.1rem;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    .form input[type=text].error,
+    .form input[type=email].error,
+    .form textarea.error,
+    .form .checkbox-cnt input.error ~ .state {
+        border-color:#E01546;
+    }
+    .field-error {
+        color:#E01546;
+        padding:0.5rem 0;
+        font-size:0.8rem;
+    }
+    @keyframes checkboxShowAnim {
+        0%  { border-radius:50%; transform:translate(-50%, -50%) scale(0.2); }
+        50% { transform:translate(-50%, -50%) scale(1.2); }
+        100% { transform:translate(-50%, -50%) scale(1); }
+    }
+
+    .element-is-busy {
+        position: relative;
+        pointer-events: none;
+        opacity:0.5;
+    }
+    .element-is-busy::after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-right-color: rgba(0,0,0,0.7);
+        transform: translate(-50%, -50%) rotate(0deg);
+        content:'';
+        animation: rotateSingleLoading 0.3s infinite linear;
+        z-index: 100;
+    }
+    @keyframes rotateSingleLoading {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+    .form .send-error {
+        display:inline-block;
+        font-family: sans-serif;
+        font-size:0.9rem;
+        padding:1rem 1.5rem;
+        color:#E01546;
+    }
+    .form-send-success {
+        font-family: sans-serif;
+        text-align:center;
+        font-size:2rem;
+        font-weight:bold;
+        border:1px solid #eee;
+        color:#333;
+        padding:10rem 0;
+        margin:3rem auto;
+        max-width:40rem;
+    }
+    .form-send-success strong {
+        display:block;
+        margin-bottom:0.5rem;
+    }
+    .form-send-success span {
+        font-size:1rem;
+        color:#888;
+        font-weight:normal;
+        display: block;
+    }
+    @media screen and (max-width:500px) {
+        .form .submit-btn {
+            display: block;
+            width: 100%;
+        }
+        .form .send-error {
+            text-align:center;
+            display: block;
+        }
+    }
+
+.contactInfo
+{
+  position: relative;
+  top: -100px;
+  width: 350px;
+  height: 400px;
+  padding: 0 150px 20px 0;
+  z-index: 1;
+  margin-right: 80px;
+}
+
+.contactInfo h2
+{
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.contactInfo ul.info
+{
+  position: relative;
+  margin: 20px 0;
+}
+.contactInfo ul.info li
+{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+.contactInfo ul.info li span:nth-child(1)
+{
+  width: 30px;
+  min-width: 30px;
+}
+.contactInfo ul.info li span img, .fas
+{
+  max-width: 100%;
+  font-size: 30px;
+  color: #000
+}
+.contactInfo ul.info li span:nth-child(2)
+{
+  color: #000;
+  margin-left: 10px;
+  font-weight: 300;
+}
+.contactInfo ul.info li:hover span img,
+.contactInfo ul.info li:hover span:nth-child(2)
+{
+  opacity: 1;
+}
+
+iframe{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background: #fff;
+    z-index: 1;
+  }
+
+@media screen and (max-width: 500px)
+{
+	.service
+	{
+		width: 100%;
+	}
+}
+
+@media (max-width: 992px)
+{
+    .offers
+    {
+
+    }
+    .offers:before
+    {
+        display: none;
+    }
+    .offers header
+    {
+        padding: 0;
+    }
+    .offers .icons ul.controls li
+    {
+        margin-top: -650px;
+        margin-left: 30px;
+    }
+    .offers .content .bannerText h2
+    {
+        font-size: 30px;
+        padding-top: 70px;
+    }
+    .offers .content
+    {
+        margin-top: 0px;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-left: -100px;
+    }
+    .offers .content .bannerImg {
+        width: 100%;
+        height: 40vh;
+        margin: 20px 0;
+    }
+    .offers .content .bannerText
+    {
+        padding-right: 0;
+        max-width: 100%; 
+    }
+    header ul
+    {
+        display: none !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100vh;
+        background: #fff;
+        z-index: 10000;
+        align-items: center;
+        padding: 100px 0;
+    }
+    header.active ul
+    {
+        display: initial !important;
+    }
+    header ul li
+    {
+        padding: 20px;
+        text-align: center;
+    }
+    header ul li a
+    {
+        color: #000 !important;
+        font-size: 36px !important;
+    }
+    .offers header ul li a:hover:before,
+    .offers header ul li a.active:before
+    {
+        width: 100%;
+    }
+    .offers header .menuIcon
+    {
+        position: sticky;
+        right: 50px;
+        display: initial;
+        cursor: pointer;
+        z-index: 100000;
+        background: #fff;
+        padding: 8px;
+        height: 30px;
+        width: 34px;
+        background: #fff url(menu.png);
+        background-repeat: no-repeat;
+        background-position: 6px;
+    }
+    .offers header.active .menuIcon
+    {
+        background: #fff url(close.png);
+        background-repeat: no-repeat;
+        background-position: 6px;
+    }
+
+    .kontener{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .contactInfo{
+        display: none;
+    }
+
+}
+
+@media (max-width: 991px)
+{
+
+  h2.heading
+  {
+    font-size: 26px;
+  }
+  p.text
+  {
+    font-size: 18px;
+  }
+  header
+  {
+    padding: 20px 50px;
+  }
+  
+  .about
+  {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+  }
+  .about .contentBx
+  {
+    padding: 50px;
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+  }
+
+  .about .imgBx{
+      display: none;
+  }
+}
+
+@media (max-width: 767px)
+{
+    .offers
+    {
+        padding: 20px 30px;
+    }
+    .offers header .menuIcon
+    {
+        right: 30px;
+    }
+    .offers .content .bannerText p,
+    .offers .content .bannerText a
+    {
+        font-size: 16px; 
+    }
+    .offers .icons ul.controls li 
+    {
+        max-width: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 991px)
+{
+	.kontener .form
+	{
+		width: 100%;
+		padding: 0 50px;
+	}
+	.kontener .form form
+	{
+		max-width: 500px;
+		padding: 0;
+	}
+	.kontener .imgBx
+	{
+		display: none;
+	}
+}
+

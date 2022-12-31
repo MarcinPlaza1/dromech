@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DROMECH S.C. - oznakowanie poziome, oznakowanie pionowe, znaki drogowe</title>
+	<link rel="stylesheet" href="css/stylehistory.css">
+	<link rel="stylesheet" href="css/global/global.css">
+	<link rel="stylesheet" href="css/global/media.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+	<div class="topbar"></div>
+	<div class="container">
+		<header id="navbar">
+			<img src="assets/img/logo.png" class="logo">
+			<ul>
+				<li><a href="#" class="active">Główna</a></li>
+				<li><a href="#">O firmie</a></li>
+				<li><a href="#">Oferta</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+			<span class="menuIcon"  onclick="menuToggle()"></span>
+		</header>
+		
+		<section class="about">
+			<div class="contentBx">
+			<h2 class="heading">Historia Zakładu Produkcyjno - Usługowego "DROMECH" s.c. w Nisku</h2>
+			<p class="text">
+                <p>Zakład Produkcyjno – Usługowy ,,DROMECH” s.c. w Nisku swoją działalność rozpoczyna w dniu 01.02.1993r.</p>
+                <p>Zakład rozpoczyna działalność od renowacji znaków drogowych na podkładzie blach stalowych czarnych grubości 3 mm z tłem
+                z folii zwykłych i odblaskowych o określonych symbolach. Głównymi odbiorcami są Urzędy Gmin, zarządcy dróg oraz
+                Przedsiębiorstwa Robót Drogowych i prywatni inwestorzy.</p>
+                <p>W latach następnych zapotrzebowanie na sprzedaż wzrasta co skutkuje potrzebą zatrudnienia pracowników. Do produkcji
+                nowych znaków drogowych używana jest blacha ocynkowana grubości 2-2,5 mm co w dużej mierze wpływa na poprawę jakości
+                wykonywanych elementów oznakowania pionowego.</p>
+                <p>Lata następne to dalszy wzrost produkcji ilości znaków drogowych z rozszerzeniem działalności o montaż oznakowania
+                pionowego przy drogach i ulicach.</p>
+                <p>Dalszy wzrost produkcji w zakresie ilościowym powoduje, że dzierżawione pomieszczenia są zbyt małe i dlatego w 1997r.
+                dokonany zostaje zakup budynku produkcyjno- biurowego z działką. Po dokonaniu odpowiedniej adaptacji i remoncie
+                produkcja wzrasta w zakresie ilościowym i jakościowym.</p>
+                <p>Zakres usług zostaje rozszerzony o kompleksowe wykonywanie prac w zakresie pionowego i poziomego oznakowania dróg i
+                ulic, oznakowania robót drogowych wraz z zabezpieczeniem miejsca robót w zakresie robót znalazły się także progi
+                zwalniające.</p>
+                <p>Zakład Produkcyjno – Usługowy ,,DROMECH” w Nisku przy ul. Nowej 99 uzyskał w 2002r. certyfikat bezpieczeństwa ruchu
+                drogowego w kompleksowym zakresie na sieci dróg krajowych, wojewódzkich, powiatowych i gminnych.</p>
+                <p>Zapotrzebowanie na prace przy wykonanie oznakowań poziomych na terenie okolicznych miast w 2006r. skłaniają do zakupu
+                dodatkowych malowarek zarówno grubowarstwowych jak i cienkowarstwowych. Dalszy rozwój Zakładu i wzrost produkcji
+                skutkuje zakupem w 2007 roku drugiej hali warsztatowej obok części dotychczas użytkowanej. Przygotowanie i adaptacja dla
+                potrzeb Zakładu wymaga przeprowadzenia prac remontowych przez co hala ma spełnić wymagania procedur jakościowych
+                wdrażanym od października 2007 roku w Zakładzie Produkcyjno – Usługowym ,,DROMECH” w Nisku zgodnie z normą PN:EN ISO
+                9001:2001</p>
+            </p>
+		</section>
+
+<div class="informacje">
+	<div class="kontener">
+		<div class="form">
+			<h2 class="zapytaj">Zapytaj o cenę</h2>
+			<form class="form" id="contactForm" method="post" novalidate action="/sendscript.php">
+				<div class="form-row">
+					<label for="field-name">Imię i nazwisko</label>
+					<input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
+						pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+				</div>
+				<div class="form-row">
+					<label for="field-business">Firma/Instytucja</label>
+					<input type="text" name="business">
+				</div>
+				<div class="form-row">
+					<label for="field-city">Miasto</label>
+					<input type="text" name="city">
+				</div>
+				<div class="form-row">
+					<label for="field-email">Adres e-mail</label>
+					<input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email"
+						pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+				</div>
+				<div class="form-row">
+					<label for="field-message">Wiadomość</label>
+					<textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"
+						pattern=".+"></textarea>
+				</div>
+				<div class="form-row">
+					<button type="submit" class="submit-btn">
+						Wyślij
+					</button>
+				</div>
+			</form>
+		</div>
+		<div class="contactInfo">
+			<div>
+				<h2>Kontakt</h2>
+				<ul class="info">
+					<li>
+						<span><i class="fas fa-street-view"></i></span>
+						<span>37-400 Nisko<br>ul. Nowa 99</span>
+					</li>
+					<li>
+						<span><i class="fas fa-phone-volume"></i></span>
+						<span>tel/fax (015) 841 51 33<br>kom. 502 651 729</span>
+					</li>
+					<li>
+						<span><i class="fas fa-envelope"></i></span>
+						<span>kontakt@dromech.com.pl</span>
+					</li>
+				</ul>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.4658157308942!2d22.146679388160106!3d50.49950259871133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d2a3f593e195f%3A0x106df104bb738d62!2sDromech%20s.c.!5e0!3m2!1spl!2spl!4v1596574958020!5m2!1spl!2spl"
+				width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+				tabindex="0"></iframe>
+		</div>
+	</div>
+</div>
+<div class="footer">© 2020 Dromech S.C Wszelkie prawa zastrzeżone</div>
+<script  src="./script.js"></script>
+</body>
+</html>
